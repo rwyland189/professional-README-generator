@@ -3,6 +3,8 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
+
+// TODO: Create an array of questions for user input
 const questions = [
     {
         // GitHub username
@@ -74,7 +76,6 @@ const questions = [
     
 ]
 
-// TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt(questions)
 };
