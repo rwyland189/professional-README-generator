@@ -2,9 +2,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-//util module in node google later
-const util = require("util");
-
 // grabbing function from generateMarkdown.js
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -42,17 +39,17 @@ const questions = [
         name: "description",
         message: "Enter a short description of your project."
     },
-    // {
-    //     // installation instructions
-    //     type: "input",
-    //     name: "installation",
-    //     message: ""
-    // },
+    {
+        // installation instructions
+        type: "input",
+        name: "installation",
+        message: "If applicable, describe the installation process."
+    },
     {
         // license information
         type: "list",
         name: "license",
-        message: "What license?",
+        message: "What license for this project?",
         choices: [
             "Ducks",
             "Lipstick",
@@ -65,12 +62,12 @@ const questions = [
     //     name: "usage",
     //     message: ""
     // },
-    // {
-    //     // contribution guidelines
-    //     type: "input",
-    //     name: "contribution",
-    //     message: ""
-    // },
+    {
+        // contribution guidelines
+        type: "input",
+        name: "contribution",
+        message: "Who are the project contributors?"
+    },
     // {
     //     // test instructions
     //     type: "input",
@@ -84,9 +81,6 @@ const askQuestions = () => {
     return inquirer.prompt(questions)
 };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
 function init() {
     askQuestions().then(answers => {
@@ -95,7 +89,6 @@ function init() {
         console.log(markdown)
         fs.writeFile('markdown.md', markdown, function (err) {
             if (err) throw err;
-            console.log('Saved!');
           });
     })
 }
