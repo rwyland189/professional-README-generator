@@ -43,13 +43,13 @@ const questions = [
         // installation instructions
         type: "input",
         name: "installation",
-        message: "If applicable, describe the installation process."
+        message: "Please describe the installation process for your project."
     },
     {
         // license information
         type: "list",
         name: "license",
-        message: "What license for this project?",
+        message: "What is the licensing for your project?",
         choices: [
             "Ducks",
             "Lipstick",
@@ -68,13 +68,12 @@ const questions = [
         name: "contribution",
         message: "Who are the project contributors?"
     },
-    // {
-    //     // test instructions
-    //     type: "input",
-    //     name: "test",
-    //     message: ""
-    // },
-    
+    {
+        // test instructions
+        type: "input",
+        name: "test",
+        message: "Please describe the tests performed on this project."
+    }
 ]
 
 const askQuestions = () => {

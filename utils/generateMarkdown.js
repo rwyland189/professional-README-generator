@@ -22,7 +22,7 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#Questions)
-  * 
+  
   ## Description
   ${data.description}
 
@@ -42,7 +42,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
+  For any questions regarding this app, please email ${data.email} or visit https://github.com/${data.github}.
 
 `;
 }
