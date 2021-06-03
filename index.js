@@ -51,17 +51,17 @@ const questions = [
         name: "license",
         message: "What is the licensing for your project?",
         choices: [
-            "Ducks",
-            "Lipstick",
-            "Pugs"
+            "MIT",
+            "Apache",
+            "GPLv3"
         ]
     },
-    // {
-    //     // usage information
-    //     type: "input",
-    //     name: "usage",
-    //     message: ""
-    // },
+    {
+        // usage information
+        type: "input",
+        name: "usage",
+        message: "Please enter usage information for your project."
+    },
     {
         // contribution guidelines
         type: "input",
