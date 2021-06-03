@@ -52,8 +52,8 @@ const questions = [
         message: "What is the licensing for your project?",
         choices: [
             "MIT",
-            "Apache",
-            "GPLv3"
+            "Apache-2.0",
+            "GPL-3.0"
         ]
     },
     {
@@ -71,7 +71,7 @@ const questions = [
     {
         // test instructions
         type: "input",
-        name: "test",
+        name: "tests",
         message: "Please describe the tests performed on this project."
     }
 ]
