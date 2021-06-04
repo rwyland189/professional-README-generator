@@ -12,8 +12,12 @@
   * [Questions](#Questions)
  
    ## Walkthrough Video
+   ### Link
   https://drive.google.com/file/d/1UWDcuPWUSbqm34mNWcGSgAmk7PxSdo6J/view
-  
+
+  ### View as GIF
+  ![Walkthrough](./assets/Walkthrough.gif)
+
   ## Description
   An application that generates a professional README file. A series of prompts will ask the user at the command line their GitHub username, email address, project title, project description, installation instructions, license information, usage information, contributors, and tests performed. The output will be a dynamically created README file that captures the user's input.
 
