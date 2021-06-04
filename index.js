@@ -25,19 +25,43 @@ const questions = [
         // Email
         type: "input",
         name: "email",
-        message: "What is your email address?"
+        message: "What is your email address? (Required)",
+        validate: email => {
+            if (email) {
+                return true;
+            } else {
+                console.log("Please enter your email!");
+                return false;
+            }
+        }
     },
     {
         // project title
         type: "input",
         name: "title",
-        message: "What is your project's title?"
+        message: "What is your project's title? (Required)",
+        validate: projectTitle => {
+            if (projectTitle) {
+                return true;
+            } else {
+                console.log("Please enter your project's title!");
+                return false;
+            }
+        }
     },
     {
         // description
         type: "input",
         name: "description",
-        message: "Enter a short description of your project."
+        message: "Enter a short description of your project. (Required)",
+        validate: description => {
+            if (description) {
+                return true;
+            } else {
+                console.log("Please enter a description!");
+                return false;
+            }
+        }
     },
     {
         // installation instructions
@@ -66,7 +90,15 @@ const questions = [
         // contribution guidelines
         type: "input",
         name: "contribution",
-        message: "Who are the project contributors?"
+        message: "Who are the project contributors? (Required)",
+        validate: contributors => {
+            if (contributors) {
+                return true;
+            } else {
+                console.log("Please enter the project's contributors!");
+                return false;
+            }
+        }
     },
     {
         // test instructions
